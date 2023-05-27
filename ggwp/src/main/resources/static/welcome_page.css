@@ -1,0 +1,254 @@
+#welcome-bg {
+    height: 100%;
+    padding: 45px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container
+{
+    padding: 0;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgb(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.login-left
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 110px;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(0,0,0,0.5);
+}
+
+.login-right
+{
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 20px rgb(0,0,0,0.5);
+}
+
+img {
+    text-decoration: none;
+    width: 10%;
+}
+
+.login-header
+{
+    margin-bottom: 50px;
+}
+
+.login-header h1
+{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.login-header p
+{
+    opacity: 0.7;
+}
+
+.login-form
+{
+    width: 450px;
+}
+
+.login-form-content
+{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.social-links
+{
+    font-size: 2em;
+    display: flex;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.social-links a
+{
+    flex: 6;
+    gap: 15px;
+    border: 1px solid black;
+    border-radius: 100px;
+    justify-content: center;
+    padding: .6rem;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: small;
+}
+
+.social-links a:hover
+{
+    background-color: #eeeeee;
+    transition: 0.3s ease;
+}
+
+.form-item label
+{
+    display: inline-block;
+    background-color: white;
+    margin-bottom: 10px;
+    position: absolute;
+    padding: 0 10px;
+    transform: translate(30px, -10px);
+    font-size: 14px;
+}
+
+input[type='text'],
+input[type='password']
+{
+    border: 1px solid black;
+    height: 55px;
+    padding: 0 2rem;
+    width: 100%;
+    transition: background .5s;
+    font-size: 18px;
+    border-radius: 100px;
+}
+
+#btn-sign-in
+{
+    border: none;
+    /*background: linear-gradient(45deg, var(--primary), var(--scondary));*/
+    /*background: var(--primary);*/
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    height: 50px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+}
+
+#btn-sign-in:hover
+{
+    animation: hover-gradient 15s ease infinite;
+}
+
+@keyframes hover-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#btn-register
+{
+    border: 2px solid var(--textcolor);
+    border-radius: 100px;
+    background: white;
+    color: var(--textcolor);
+    text-align: center;
+    text-transform: uppercase;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+#btn-register:hover
+{
+    background-color: #eeeeee;
+    transition: 0.3s ease;
+}
+
+.additional-options
+{
+    font-size: small;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#forget-your-account
+{
+    font-size: small;
+    position: relative;
+    text-align: right;
+    right: 10px;
+    bottom: 20px;
+}
+
+#forget-your-account a
+{
+    color: black;
+}
+
+#forget-your-account a:hover
+{
+    color: var(--primary);
+    transition: 0.3s ease;
+}
+
+.d-block img
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive */
+@media (max-width: 1350px) {
+    .login-left {
+        padding: 50px !important;
+    }
+
+    .login-form {
+        width: 100%;
+    }
+
+    .social-links
+    {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container{
+        grid-template-columns: auto;
+    }
+
+    .login-left
+    {
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .login-right{
+        display: none;
+    }
+}
