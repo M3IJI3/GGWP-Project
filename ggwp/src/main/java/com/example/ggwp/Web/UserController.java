@@ -10,6 +10,13 @@ public class UserController {
     @GetMapping(path = "/")
     public String InitialPage(Model model)
     {
+
         return "welcome";
+    }
+
+    @GetMapping(path = "/register")
+    public String RegisterPage(Model model)
+    {
+        return "register";
     }
 }
