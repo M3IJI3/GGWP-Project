@@ -1,1 +1,2 @@
-# XYZ-Project
+# GGWP
+# This is a website for game lovers!
