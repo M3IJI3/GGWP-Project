@@ -10,7 +10,12 @@ public class UserController {
     @GetMapping(path = "/")
     public String InitialPage(Model model)
     {
+        return "welcome";
+    }
 
+    @GetMapping(path = "/welcome")
+    public String BackToInitialPage(Model model)
+    {
         return "welcome";
     }
 

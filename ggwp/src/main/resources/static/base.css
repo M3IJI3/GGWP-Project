@@ -24,6 +24,42 @@ code
     color: var(--textcolor);
 }
 
+/* Responsive */
+@media (max-width: 1350px) {
+    .login-left {
+        padding: 50px !important;
+    }
+
+    .login-form {
+        width: 100%;
+    }
+
+    .social-links
+    {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .container{
+        grid-template-columns: auto;
+    }
+
+    .login-left
+    {
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .login-right{
+        display: none;
+    }
+}
+
 
 
 
